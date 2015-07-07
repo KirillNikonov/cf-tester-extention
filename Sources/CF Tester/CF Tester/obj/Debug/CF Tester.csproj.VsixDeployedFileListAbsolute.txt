@@ -1,0 +1,5 @@
+C:\Users\kirill.nikonov\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\NotACompany\CF Tester\1.0\\CF Tester.dll
+C:\Users\kirill.nikonov\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\NotACompany\CF Tester\1.0\\CF Tester.pkgdef
+C:\Users\kirill.nikonov\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\NotACompany\CF Tester\1.0\\extension.vsixmanifest
+C:\Users\kirill.nikonov\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\NotACompany\CF Tester\1.0\\CF Tester.pdb
+C:\Users\kirill.nikonov\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\NotACompany\CF Tester\1.0\\Newtonsoft.Json.dll

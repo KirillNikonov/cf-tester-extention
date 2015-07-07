@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+
+
+  
+  <Commands package="guidCF_TesterPkg">
+
+    <Menus>
+      
+      <Menu guid="guidCF_TesterCmdSet" id="Toolbar" type="Toolbar" >
+        <Strings>
+          <ButtonText>CF Tester Toolbar</ButtonText>
+        </Strings>
+      </Menu>
+
+      <Menu guid="guidCF_TesterCmdSet" id="cmdidContestOption1Command" type="MenuControllerLatched" >
+        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup"/>
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+          <ButtonText>#XXX</ButtonText>
+        </Strings>
+      </Menu>
+      
+    </Menus>
+    
+    
+    
+    <Groups>
+
+      <Group guid="guidCF_TesterCmdSet" id="ToolbarGroup" priority="0x0600">
+        <Parent guid="guidCF_TesterCmdSet" id="Toolbar"/>
+      </Group>
+
+      <Group guid="guidCF_TesterCmdSet" id="DropdownGroup" priority="0x0700">
+        <Parent guid="guidCF_TesterCmdSet" id="cmdidContestOption1Command"/>
+      </Group>
+
+    </Groups>
+    
+
+    
+    <Buttons>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidContestOption2Command" priority="0x0001" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+          <ButtonText>#XXX</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidContestOption3Command" priority="0x0002" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+          <ButtonText>#XXX</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidContestOption4Command" priority="0x0003" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+          <ButtonText>#XXX</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidContestOption5Command" priority="0x0004" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+          <ButtonText>#XXX</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidContestOption6Command" priority="0x0005" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <Strings>
+          <ButtonText>#XXX</ButtonText>
+        </Strings>
+      </Button>
+      
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestACommand" priority="0x0010" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Strings>
+          <ButtonText>A</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestBCommand" priority="0x0011" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Strings>
+          <ButtonText>B</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestCCommand" priority="0x0012" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Strings>
+          <ButtonText>C</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestDCommand" priority="0x0013" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Strings>
+          <ButtonText>D</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestECommand" priority="0x0014" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Strings>
+          <ButtonText>E</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestFCommand" priority="0x0015" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Strings>
+          <ButtonText>F</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestGCommand" priority="0x0016" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Strings>
+          <ButtonText>G</ButtonText>
+        </Strings>
+      </Button>
+
+    </Buttons>
+    
+    
+   
+    <Bitmaps>
+      <Bitmap guid="guidImages" href="Resources\Images.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows"/>
+    </Bitmaps>
+ 
+  </Commands>
+
+
+  
+  <Symbols>
+    
+    <GuidSymbol name="guidCF_TesterPkg" value="{16c83fb8-6e7c-4ce1-95f4-1f3c4c87cc01}" />
+    
+    <GuidSymbol name="guidCF_TesterCmdSet" value="{53a69605-38dd-4df3-8571-5488037123ba}">
+      <IDSymbol name="Toolbar" value="0x1000" />
+      <IDSymbol name="Dropdown" value="0x1001" />
+      <IDSymbol name="ToolbarGroup" value="0x1100" />
+      <IDSymbol name="DropdownGroup" value="0x1101" />
+      <IDSymbol name="cmdidTestACommand" value="0x0100" />
+      <IDSymbol name="cmdidTestBCommand" value="0x0101" />
+      <IDSymbol name="cmdidTestCCommand" value="0x0102" />
+      <IDSymbol name="cmdidTestDCommand" value="0x0103" />
+      <IDSymbol name="cmdidTestECommand" value="0x0104" />
+      <IDSymbol name="cmdidTestFCommand" value="0x0105" />
+      <IDSymbol name="cmdidTestGCommand" value="0x0106" />
+      <IDSymbol name="cmdidContestOption1Command" value="0x0107" />
+      <IDSymbol name="cmdidContestOption2Command" value="0x0108" />
+      <IDSymbol name="cmdidContestOption3Command" value="0x0109" />
+      <IDSymbol name="cmdidContestOption4Command" value="0x010a" />
+      <IDSymbol name="cmdidContestOption5Command" value="0x010b" />
+      <IDSymbol name="cmdidContestOption6Command" value="0x010c" />
+  </GuidSymbol>
+    
+    <GuidSymbol name="guidImages" value="{a0f5705b-ebb1-4f1a-874f-3894d0bbccad}" >
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+    
+  </Symbols>
+
+</CommandTable>

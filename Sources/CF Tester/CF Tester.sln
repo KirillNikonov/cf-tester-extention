@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CF Tester", "CF Tester\CF Tester.csproj", "{52956792-4C46-4B9E-B65C-509BB9A03759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CF Tester_IntegrationTests", "CF Tester\CF Tester_IntegrationTests\CF Tester_IntegrationTests.csproj", "{1AC85457-AF4C-4A39-AC1A-CEAB0BF08D40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8FE816BC-497F-4EFF-A154-386E3C6562A3}"
+	ProjectSection(SolutionItems) = preProject
+		IntegrationTests.testsettings = IntegrationTests.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52956792-4C46-4B9E-B65C-509BB9A03759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52956792-4C46-4B9E-B65C-509BB9A03759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52956792-4C46-4B9E-B65C-509BB9A03759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52956792-4C46-4B9E-B65C-509BB9A03759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC85457-AF4C-4A39-AC1A-CEAB0BF08D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC85457-AF4C-4A39-AC1A-CEAB0BF08D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC85457-AF4C-4A39-AC1A-CEAB0BF08D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC85457-AF4C-4A39-AC1A-CEAB0BF08D40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

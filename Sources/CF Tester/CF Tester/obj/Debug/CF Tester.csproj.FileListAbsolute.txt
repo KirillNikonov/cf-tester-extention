@@ -20,3 +20,25 @@ D:\Documents\Visual Studio 2013\Projects\CF Tester\CF Tester\obj\Debug\extension
 D:\Documents\Visual Studio 2013\Projects\CF Tester\CF Tester\obj\Debug\CF Tester.csprojResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2013\Projects\CF Tester\CF Tester\bin\Debug\Newtonsoft.Json.dll
 D:\Documents\Visual Studio 2013\Projects\CF Tester\CF Tester\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\CF Tester.dll
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\CF Tester.pdb
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\CF Tester.pkgdef
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\CF Tester.vsix
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\extension.vsixmanifest
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\Newtonsoft.Json.dll
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.csproj.ResolveComReference.cache
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\VSPackage.resources
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\NotACompany.CF_Tester.Resources.resources
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.csproj.GenerateResource.Cache
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.cto
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\VSCT.read.1.tlog
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\VSCT.write.1.tlog
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CtoResourceMerger.cache
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\VSPackage.resources.original
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.dll
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.pdb
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.pkgdef
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.latest.pkgdef
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\extension.vsixmanifest

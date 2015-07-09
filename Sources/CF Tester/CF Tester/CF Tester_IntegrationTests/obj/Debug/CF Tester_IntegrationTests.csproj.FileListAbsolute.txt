@@ -9,3 +9,14 @@ D:\Documents\Visual Studio 2013\Projects\CF Tester\CF Tester\CF Tester_Integrati
 D:\Documents\Visual Studio 2013\Projects\CF Tester\CF Tester\CF Tester_IntegrationTests\obj\Debug\CF Tester_IntegrationTests.pdb
 D:\Documents\Visual Studio 2013\Projects\CF Tester\CF Tester\CF Tester_IntegrationTests\bin\Debug\Newtonsoft.Json.dll
 D:\Documents\Visual Studio 2013\Projects\CF Tester\CF Tester\CF Tester_IntegrationTests\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\CF Tester_IntegrationTests\bin\Debug\CF Tester_IntegrationTests.dll
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\CF Tester_IntegrationTests\bin\Debug\CF Tester_IntegrationTests.pdb
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\CF Tester_IntegrationTests\bin\Debug\CF Tester.dll
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\CF Tester_IntegrationTests\bin\Debug\Microsoft.VSSDK.TestHostFramework.dll
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\CF Tester_IntegrationTests\bin\Debug\Newtonsoft.Json.dll
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\CF Tester_IntegrationTests\bin\Debug\CF Tester.pdb
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\CF Tester_IntegrationTests\bin\Debug\Microsoft.VSSDK.TestHostFramework.pdb
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\CF Tester_IntegrationTests\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\CF Tester_IntegrationTests\obj\Debug\CF Tester_IntegrationTests.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\CF Tester_IntegrationTests\obj\Debug\CF Tester_IntegrationTests.dll
+D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\CF Tester_IntegrationTests\obj\Debug\CF Tester_IntegrationTests.pdb

@@ -130,6 +130,7 @@
     <Compile Include="HTMLParser.cs" />
     <Compile Include="Models\Contest.cs" />
     <Compile Include="Models\ContestListResult.cs" />
+    <Compile Include="Models\Result.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

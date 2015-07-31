@@ -16,11 +16,25 @@
         </Strings>
       </Menu>
 
-      <Menu guid="guidCF_TesterCmdSet" id="cmdidContestOption1Command" type="MenuControllerLatched" >
+      <Menu guid="guidCF_TesterCmdSet" id="cmdidContestOption1Command" type="MenuControllerLatched" priority="0x0000">
         <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup"/>
         <CommandFlag>TextChanges</CommandFlag>
         <Strings>
           <ButtonText>#XXX</ButtonText>
+        </Strings>
+      </Menu>
+
+      <Menu guid="guidCF_TesterCmdSet" id="TestProblemMenu" type="Menu" priority="0x0002">
+        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup"/>
+        <Strings>
+          <ButtonText>TEST PROBLEM</ButtonText>
+        </Strings>
+      </Menu>
+
+      <Menu guid="guidCF_TesterCmdSet" id="DebugTestMenu" type="Menu" priority="0x0003">
+        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup"/>
+        <Strings>
+          <ButtonText>DEBUG TEST</ButtonText>
         </Strings>
       </Menu>
       
@@ -34,8 +48,16 @@
         <Parent guid="guidCF_TesterCmdSet" id="Toolbar"/>
       </Group>
 
-      <Group guid="guidCF_TesterCmdSet" id="DropdownGroup" priority="0x0700">
+      <Group guid="guidCF_TesterCmdSet" id="ContestDropdownGroup" priority="0x0700">
         <Parent guid="guidCF_TesterCmdSet" id="cmdidContestOption1Command"/>
+      </Group>
+
+      <Group guid="guidCF_TesterCmdSet" id="TestDropdownGroup" priority="0x0800">
+        <Parent guid="guidCF_TesterCmdSet" id="TestProblemMenu"/>
+      </Group>
+
+      <Group guid="guidCF_TesterCmdSet" id="DebugDropdownGroup" priority="0x0000">
+        <Parent guid="guidCF_TesterCmdSet" id="DebugTestMenu"/>
       </Group>
 
     </Groups>
@@ -45,7 +67,7 @@
     <Buttons>
 
       <Button guid="guidCF_TesterCmdSet" id="cmdidContestOption2Command" priority="0x0001" type="Button">
-        <Parent guid="guidCF_TesterCmdSet" id="DropdownGroup" />
+        <Parent guid="guidCF_TesterCmdSet" id="ContestDropdownGroup" />
         <CommandFlag>TextChanges</CommandFlag>
         <Strings>
           <ButtonText>#XXX</ButtonText>
@@ -53,7 +75,7 @@
       </Button>
 
       <Button guid="guidCF_TesterCmdSet" id="cmdidContestOption3Command" priority="0x0002" type="Button">
-        <Parent guid="guidCF_TesterCmdSet" id="DropdownGroup" />
+        <Parent guid="guidCF_TesterCmdSet" id="ContestDropdownGroup" />
         <CommandFlag>TextChanges</CommandFlag>
         <Strings>
           <ButtonText>#XXX</ButtonText>
@@ -61,7 +83,7 @@
       </Button>
 
       <Button guid="guidCF_TesterCmdSet" id="cmdidContestOption4Command" priority="0x0003" type="Button">
-        <Parent guid="guidCF_TesterCmdSet" id="DropdownGroup" />
+        <Parent guid="guidCF_TesterCmdSet" id="ContestDropdownGroup" />
         <CommandFlag>TextChanges</CommandFlag>
         <Strings>
           <ButtonText>#XXX</ButtonText>
@@ -69,7 +91,7 @@
       </Button>
 
       <Button guid="guidCF_TesterCmdSet" id="cmdidContestOption5Command" priority="0x0004" type="Button">
-        <Parent guid="guidCF_TesterCmdSet" id="DropdownGroup" />
+        <Parent guid="guidCF_TesterCmdSet" id="ContestDropdownGroup" />
         <CommandFlag>TextChanges</CommandFlag>
         <Strings>
           <ButtonText>#XXX</ButtonText>
@@ -77,59 +99,307 @@
       </Button>
 
       <Button guid="guidCF_TesterCmdSet" id="cmdidContestOption6Command" priority="0x0005" type="Button">
-        <Parent guid="guidCF_TesterCmdSet" id="DropdownGroup" />
+        <Parent guid="guidCF_TesterCmdSet" id="ContestDropdownGroup" />
         <CommandFlag>TextChanges</CommandFlag>
         <Strings>
           <ButtonText>#XXX</ButtonText>
         </Strings>
       </Button>
-      
-      <Button guid="guidCF_TesterCmdSet" id="cmdidTestACommand" priority="0x0010" type="Button">
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidRefreshCommand" priority="0x0001" type="Button">
         <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Strings>
+          <ButtonText>Refresh</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestACommand" priority="0x0010" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <ButtonText>A</ButtonText>
         </Strings>
       </Button>
 
       <Button guid="guidCF_TesterCmdSet" id="cmdidTestBCommand" priority="0x0011" type="Button">
-        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <ButtonText>B</ButtonText>
         </Strings>
       </Button>
 
       <Button guid="guidCF_TesterCmdSet" id="cmdidTestCCommand" priority="0x0012" type="Button">
-        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <ButtonText>C</ButtonText>
         </Strings>
       </Button>
 
       <Button guid="guidCF_TesterCmdSet" id="cmdidTestDCommand" priority="0x0013" type="Button">
-        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <ButtonText>D</ButtonText>
         </Strings>
       </Button>
 
       <Button guid="guidCF_TesterCmdSet" id="cmdidTestECommand" priority="0x0014" type="Button">
-        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <ButtonText>E</ButtonText>
         </Strings>
       </Button>
 
       <Button guid="guidCF_TesterCmdSet" id="cmdidTestFCommand" priority="0x0015" type="Button">
-        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <ButtonText>F</ButtonText>
         </Strings>
       </Button>
 
       <Button guid="guidCF_TesterCmdSet" id="cmdidTestGCommand" priority="0x0016" type="Button">
-        <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
           <ButtonText>G</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestHCommand" priority="0x0017" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>H</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestICommand" priority="0x0018" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>I</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestJCommand" priority="0x0019" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>J</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestKCommand" priority="0x001a" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>K</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestLCommand" priority="0x001b" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>L</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestMCommand" priority="0x001c" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <ButtonText>M</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestNCommand" priority="0x001d" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>N</ButtonText>
+        </Strings>
+      </Button>
+      
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestOCommand" priority="0x001e" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>O</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestPCommand" priority="0x001f" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>P</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestQCommand" priority="0x0020" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Q</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestRCommand" priority="0x0021" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>R</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestSCommand" priority="0x0022" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>S</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidTestTCommand" priority="0x0023" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="TestDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>T</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidDebug1Command" priority="0x0000" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DebugDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Sample test #1</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidDebug2Command" priority="0x0001" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DebugDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Sample test #2</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidDebug3Command" priority="0x0002" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DebugDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Sample test #3</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidDebug4Command" priority="0x0003" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DebugDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Sample test #4</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidDebug5Command" priority="0x0004" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DebugDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Sample test #5</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidDebug6Command" priority="0x0005" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DebugDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Sample test #6</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidDebug7Command" priority="0x0006" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DebugDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Sample test #7</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidDebug8Command" priority="0x0007" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DebugDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Sample test #8</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidCF_TesterCmdSet" id="cmdidDebug9Command" priority="0x0008" type="Button">
+        <Parent guid="guidCF_TesterCmdSet" id="DebugDropdownGroup" />
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Sample test #9</ButtonText>
         </Strings>
       </Button>
 
@@ -152,8 +422,12 @@
     <GuidSymbol name="guidCF_TesterCmdSet" value="{53a69605-38dd-4df3-8571-5488037123ba}">
       <IDSymbol name="Toolbar" value="0x1000" />
       <IDSymbol name="Dropdown" value="0x1001" />
+      <IDSymbol name="TestProblemMenu" value="0x1002" />
+      <IDSymbol name="DebugTestMenu" value="0x1003" />
       <IDSymbol name="ToolbarGroup" value="0x1100" />
-      <IDSymbol name="DropdownGroup" value="0x1101" />
+      <IDSymbol name="ContestDropdownGroup" value="0x1101" />
+      <IDSymbol name="TestDropdownGroup" value="0x1102" />
+      <IDSymbol name="DebugDropdownGroup" value="0x1103" />
       <IDSymbol name="cmdidTestACommand" value="0x0100" />
       <IDSymbol name="cmdidTestBCommand" value="0x0101" />
       <IDSymbol name="cmdidTestCCommand" value="0x0102" />
@@ -161,13 +435,36 @@
       <IDSymbol name="cmdidTestECommand" value="0x0104" />
       <IDSymbol name="cmdidTestFCommand" value="0x0105" />
       <IDSymbol name="cmdidTestGCommand" value="0x0106" />
-      <IDSymbol name="cmdidContestOption1Command" value="0x0107" />
-      <IDSymbol name="cmdidContestOption2Command" value="0x0108" />
-      <IDSymbol name="cmdidContestOption3Command" value="0x0109" />
-      <IDSymbol name="cmdidContestOption4Command" value="0x010a" />
-      <IDSymbol name="cmdidContestOption5Command" value="0x010b" />
-      <IDSymbol name="cmdidContestOption6Command" value="0x010c" />
-  </GuidSymbol>
+      <IDSymbol name="cmdidTestHCommand" value="0x0107" />
+      <IDSymbol name="cmdidTestICommand" value="0x0108" />
+      <IDSymbol name="cmdidTestJCommand" value="0x0109" />
+      <IDSymbol name="cmdidTestKCommand" value="0x010a" />
+      <IDSymbol name="cmdidTestLCommand" value="0x010b" />
+      <IDSymbol name="cmdidTestMCommand" value="0x010c" />
+      <IDSymbol name="cmdidTestNCommand" value="0x010d" />
+      <IDSymbol name="cmdidTestOCommand" value="0x010e" />
+      <IDSymbol name="cmdidTestPCommand" value="0x010f" />
+      <IDSymbol name="cmdidTestQCommand" value="0x0110" />
+      <IDSymbol name="cmdidTestRCommand" value="0x0111" />
+      <IDSymbol name="cmdidTestSCommand" value="0x0112" />
+      <IDSymbol name="cmdidTestTCommand" value="0x0113" />
+      <IDSymbol name="cmdidContestOption1Command" value="0x0200" />
+      <IDSymbol name="cmdidContestOption2Command" value="0x0201" />
+      <IDSymbol name="cmdidContestOption3Command" value="0x0202" />
+      <IDSymbol name="cmdidContestOption4Command" value="0x0203" />
+      <IDSymbol name="cmdidContestOption5Command" value="0x0204" />
+      <IDSymbol name="cmdidContestOption6Command" value="0x0205" />
+      <IDSymbol name="cmdidRefreshCommand" value="0x0300" />
+      <IDSymbol name="cmdidDebug1Command" value="0x0500" />
+      <IDSymbol name="cmdidDebug2Command" value="0x0501" />
+      <IDSymbol name="cmdidDebug3Command" value="0x0502" />
+      <IDSymbol name="cmdidDebug4Command" value="0x0503" />
+      <IDSymbol name="cmdidDebug5Command" value="0x0504" />
+      <IDSymbol name="cmdidDebug6Command" value="0x0505" />
+      <IDSymbol name="cmdidDebug7Command" value="0x0506" />
+      <IDSymbol name="cmdidDebug8Command" value="0x0507" />
+      <IDSymbol name="cmdidDebug9Command" value="0x0508" />
+    </GuidSymbol>
     
     <GuidSymbol name="guidImages" value="{a0f5705b-ebb1-4f1a-874f-3894d0bbccad}" >
       <IDSymbol name="bmpPic1" value="1" />

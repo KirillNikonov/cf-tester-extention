@@ -34,9 +34,9 @@
                 rb++;
             }
 
-            while (!(sourceString[--rb] == '>' && sourceString[rb - 1] != '\\')) ;
+            while (!(sourceString[--rb] == '<' && sourceString[rb - 1] != '\\')) ;
 
-            return sourceString.Substring(lb, rb - lb + 1);
+            return sourceString.Substring(lb, rb - lb);
         }
 
         /// <summary>
@@ -50,11 +50,14 @@
             List<string> result = new List<string>();
 
             MatchCollection matches = new Regex(className).Matches(sourceString);
+            int lb, rb, tmp = 0, bracketCounter;
             foreach (Match match in matches)
             {
-                int lb = match.Index + className.Length;
+                lb = match.Index + className.Length;
+                if (lb <= tmp) continue;
                 for (; lb < sourceString.Length && !(sourceString[lb - 1] == '>' && sourceString[lb - 2] != '\\'); lb++) ;
-                int rb = lb, tmp, bracketCounter = 1;
+                rb = lb;
+                bracketCounter = 1;
 
                 while (bracketCounter > 0)
                 {
@@ -69,8 +72,8 @@
                     rb++;
                 }
 
-                while (!(sourceString[--rb] == '>' && sourceString[rb - 1] != '\\')) ;
-                result.Add(sourceString.Substring(lb, rb - lb + 1));
+                while (!(sourceString[--rb] == '<' && sourceString[rb - 1] != '\\')) ;
+                result.Add(sourceString.Substring(lb, rb - lb));
             }
 
             return result;

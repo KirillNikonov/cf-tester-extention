@@ -42,3 +42,25 @@ D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF
 D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.pkgdef
 D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.latest.pkgdef
 D:\Documents\GitHub\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\extension.vsixmanifest
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\CF Tester.dll
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\CF Tester.pdb
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\CF Tester.pkgdef
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\CF Tester.vsix
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\extension.vsixmanifest
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.csprojResolveAssemblyReference.cache
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.csproj.ResolveComReference.cache
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\VSPackage.resources
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\NotACompany.CF_Tester.Resources.resources
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.csproj.GenerateResource.Cache
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.cto
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\VSCT.read.1.tlog
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\VSCT.write.1.tlog
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CtoResourceMerger.cache
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\VSPackage.resources.original
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.dll
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.pdb
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.pkgdef
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\CF Tester.latest.pkgdef
+C:\Users\Cyrill\Documents\Visual Studio 2013\Projects\cf-tester-extention\Sources\CF Tester\CF Tester\obj\Debug\extension.vsixmanifest

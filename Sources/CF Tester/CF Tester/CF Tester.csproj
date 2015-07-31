@@ -126,10 +126,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Codeforces.cs" />
+    <Compile Include="Exceptions\FailedRequestException.cs" />
     <Compile Include="Guids.cs" />
     <Compile Include="HTMLParser.cs" />
     <Compile Include="Models\Contest.cs" />
     <Compile Include="Models\ContestListResult.cs" />
+    <Compile Include="Models\Problem.cs" />
+    <Compile Include="Models\ProblemList.cs" />
+    <Compile Include="Models\ProblemListResult.cs" />
     <Compile Include="Models\Result.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -165,6 +169,7 @@
   <ItemGroup>
     <VSCTCompile Include="CF Tester.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
+      <SubType>Designer</SubType>
     </VSCTCompile>
   </ItemGroup>
   <ItemGroup>

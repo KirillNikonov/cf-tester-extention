@@ -108,6 +108,7 @@
 
       <Button guid="guidCF_TesterCmdSet" id="cmdidRefreshCommand" priority="0x0001" type="Button">
         <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup" />
+        <Icon guid="refreshIcons" id="refreshIcon" />
         <Strings>
           <ButtonText>Refresh</ButtonText>
         </Strings>
@@ -409,6 +410,7 @@
    
     <Bitmaps>
       <Bitmap guid="guidImages" href="Resources\Images.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows"/>
+      <Bitmap guid="refreshIcons" href="Resources\refresh_16xMD.png" usedList="refreshIcon"/>   
     </Bitmaps>
  
   </Commands>
@@ -473,6 +475,10 @@
       <IDSymbol name="bmpPicX" value="4" />
       <IDSymbol name="bmpPicArrows" value="5" />
       <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+
+    <GuidSymbol name="refreshIcons" value="{668ec7ca-3039-4b68-a2e2-d5e9b8989ed1}" >
+      <IDSymbol name="refreshIcon" value="1" />
     </GuidSymbol>
     
   </Symbols>

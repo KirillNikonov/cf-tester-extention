@@ -85,7 +85,7 @@
             }
             catch (FailedRequestException exception)
             {
-                MessageBox.Show("Failed to connect to Codeforces. The server may be unavailable.", "Codeforces Tester", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(exception.Message, "Codeforces Tester", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion

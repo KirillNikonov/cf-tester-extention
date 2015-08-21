@@ -1,6 +1,5 @@
 ﻿namespace NotACompany.CF_Tester
 {
-    using EnvDTE;
     using Microsoft.VisualStudio.Shell;
     using NotACompany.CF_Tester.Exceptions;
     using NotACompany.CF_Tester.Models;
@@ -10,6 +9,7 @@
     using System.ComponentModel.Design;
     using System.IO;
     using System.Windows.Forms;
+    using System.Linq;
 
     public sealed partial class CF_TesterPackage : Package
     {
@@ -19,12 +19,11 @@
         /// <param name="newContest">Test ID (number).</param>
         private void DebugTest(int testId)
         {
-            IEnumerable activeProjects = dte.ActiveSolutionProjects as IEnumerable;
             string projectName = "";
 
-            foreach (var item in activeProjects)
+            foreach (EnvDTE.Project project in dte.Solution.Projects)
             {
-                projectName = ((Project)item).Name;
+                projectName = project.Name;
                 break;
             }
 
@@ -94,7 +93,7 @@
             }
             catch (FailedRequestException exception)
             {
-                MessageBox.Show("Failed to connect to Codeforces. The server may be unavailable.", "Codeforces Tester", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(exception.Message, "Codeforces Tester", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -122,14 +121,12 @@
                     }
                     else
                     {
-                        IEnumerable activeProjects = dte.ActiveSolutionProjects as IEnumerable;
                         string solutionDir = Path.GetDirectoryName(solution.FullName);
-
                         string projectName = "";
 
-                        foreach (var item in activeProjects)
+                        foreach (EnvDTE.Project project in dte.Solution.Projects)
                         {
-                            projectName = ((Project)item).Name;
+                            projectName = project.Name;
                             break;
                         }
 
@@ -174,7 +171,7 @@
             }
             catch (FailedRequestException exception)
             {
-                MessageBox.Show("Failed to connect to Codeforces. The server may be unavailable.", "Codeforces Tester", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(exception.Message, "Codeforces Tester", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

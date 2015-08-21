@@ -27,7 +27,7 @@
 
             if (response == null || ((HttpWebResponse)response).StatusCode != HttpStatusCode.OK)
             {
-                throw new FailedRequestException();
+                throw new FailedRequestException("Failed to connect to Codeforces. The server may be unavailable.");
             }
 
             var reader = new StreamReader(response.GetResponseStream(), UTF8Encoding.UTF8);
@@ -67,7 +67,7 @@
 
             if (response == null || ((HttpWebResponse)response).StatusCode != HttpStatusCode.OK)
             {
-                throw new FailedRequestException();
+                throw new FailedRequestException("Failed to connect to Codeforces. The server may be unavailable.");
             }
 
             var reader = new StreamReader(response.GetResponseStream(), UTF8Encoding.UTF8);
@@ -106,7 +106,7 @@
 
             if (response == null || ((HttpWebResponse)response).StatusCode != HttpStatusCode.OK)
             {
-                throw new FailedRequestException();
+                throw new FailedRequestException("Failed to connect to Codeforces. The server may be unavailable.");
             }
 
             var reader = new StreamReader(response.GetResponseStream(), UTF8Encoding.UTF8);

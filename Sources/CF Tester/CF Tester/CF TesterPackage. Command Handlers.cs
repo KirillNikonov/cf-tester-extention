@@ -4,12 +4,9 @@
     using NotACompany.CF_Tester.Exceptions;
     using NotACompany.CF_Tester.Models;
     using System;
-    using System.Collections;
     using System.Collections.Generic;
     using System.ComponentModel.Design;
-    using System.IO;
     using System.Windows.Forms;
-    using System.Linq;
 
     public sealed partial class CF_TesterPackage : Package
     {
@@ -19,17 +16,9 @@
         /// <param name="newContest">Test ID (number).</param>
         private void DebugTest(int testId)
         {
-            string projectName = "";
-
-            foreach (EnvDTE.Project project in dte.Solution.Projects)
-            {
-                projectName = project.Name;
-                break;
-            }
-
             System.Diagnostics.Process process = new System.Diagnostics.Process();
-            process.StartInfo.FileName = Path.GetDirectoryName(solution.FullName) + "\\Debug\\" + projectName + ".exe";
 
+            process.StartInfo.FileName = getFullOutputPath();
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.RedirectStandardInput = true;
             process.StartInfo.RedirectStandardOutput = false;
@@ -121,20 +110,11 @@
                     }
                     else
                     {
-                        string solutionDir = Path.GetDirectoryName(solution.FullName);
-                        string projectName = "";
-
-                        foreach (EnvDTE.Project project in dte.Solution.Projects)
-                        {
-                            projectName = project.Name;
-                            break;
-                        }
-
                         foreach (Test test in tests)
                         {
                             System.Diagnostics.Process process = new System.Diagnostics.Process();
-                            process.StartInfo.FileName = solutionDir + "\\Debug\\" + projectName + ".exe";
 
+                            process.StartInfo.FileName = getFullOutputPath();
                             process.StartInfo.UseShellExecute = false;
                             process.StartInfo.RedirectStandardInput = true;
                             process.StartInfo.RedirectStandardOutput = true;
@@ -155,7 +135,7 @@
                             results.Add(result);
                         }
 
-                        ShowResults(tests, results);
+                        showResults(tests, results);
                     }
                 }
 
@@ -172,50 +152,6 @@
             catch (FailedRequestException exception)
             {
                 MessageBox.Show(exception.Message, "Codeforces Tester", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        /// <summary>
-        /// Analyzes the test results shows a summary to the user.
-        /// </summary>
-        /// <param name="tests">Tests.</param>
-        /// <param name="results">Results.</param>
-        private void ShowResults(List<Test> tests, List<Result> results)
-        {
-            int firstDifferent = 0;
-
-            while (firstDifferent < tests.Count &&
-                !results[firstDifferent].crashed &&
-                results[firstDifferent].output == tests[firstDifferent].output) firstDifferent++;
-
-            if (firstDifferent == tests.Count)
-            {
-                MessageBox.Show("All tests have been passed successfully.", "Codeforces Tester", MessageBoxButtons.OK, MessageBoxIcon.None);
-            }
-            else
-            {
-                for (int i = firstDifferent; i < results.Count; i++)
-                {
-                    if (results[i].crashed)
-                    {
-                        MessageBox.Show("The program crashed at test #" + (i + 1).ToString() + ".\n\n" + "Input:\n\n" + tests[i].input + "\n", "Codeforces Tester", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-                }
-
-                for (int i = firstDifferent; i < tests.Count; i++)
-                {
-                    if (String.Compare(results[i].output, tests[i].output) != 0)
-                    {
-                        string message = "";
-                        message += "==================== " + "Test #" + (i + 1).ToString() + " ====================\n\n";
-                        message += "Input:\n\n" + tests[i].input + "\n\n";
-                        message += "Expected:\n\n" + tests[i].output + "\n\n";
-                        message += "Output:\n\n" + results[i].output + "\n\n";
-
-                        MessageBox.Show(message, "Codeforces Tester", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                }
             }
         }
     }

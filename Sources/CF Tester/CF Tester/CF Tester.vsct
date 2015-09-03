@@ -27,7 +27,8 @@
       <Menu guid="guidCF_TesterCmdSet" id="TestProblemMenu" type="Menu" priority="0x0002">
         <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup"/>
         <Strings>
-          <ButtonText>TEST PROBLEM</ButtonText>
+          <ButtonText>RUN TESTS</ButtonText>
+          <ToolTipText>Run sample tests</ToolTipText>
         </Strings>
       </Menu>
 
@@ -35,6 +36,7 @@
         <Parent guid="guidCF_TesterCmdSet" id="ToolbarGroup"/>
         <Strings>
           <ButtonText>DEBUG TEST</ButtonText>
+          <ToolTipText>Debug on each test individually</ToolTipText>
         </Strings>
       </Menu>
       

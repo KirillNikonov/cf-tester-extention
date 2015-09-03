@@ -3,7 +3,6 @@
     using Microsoft.VisualStudio.Shell;
     using NotACompany.CF_Tester.Exceptions;
     using NotACompany.CF_Tester.Models;
-    using System;
     using System.Collections.Generic;
     using System.ComponentModel.Design;
     using System.Windows.Forms;
@@ -18,7 +17,7 @@
         {
             System.Diagnostics.Process process = new System.Diagnostics.Process();
 
-            process.StartInfo.FileName = getFullOutputPath();
+            process.StartInfo.FileName = GetFullOutputPath();
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.RedirectStandardInput = true;
             process.StartInfo.RedirectStandardOutput = false;
@@ -114,7 +113,7 @@
                         {
                             System.Diagnostics.Process process = new System.Diagnostics.Process();
 
-                            process.StartInfo.FileName = getFullOutputPath();
+                            process.StartInfo.FileName = GetFullOutputPath();
                             process.StartInfo.UseShellExecute = false;
                             process.StartInfo.RedirectStandardInput = true;
                             process.StartInfo.RedirectStandardOutput = true;
@@ -135,7 +134,7 @@
                             results.Add(result);
                         }
 
-                        showResults(tests, results);
+                        ShowResults(tests, results);
                     }
                 }
 
